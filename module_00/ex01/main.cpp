@@ -13,13 +13,19 @@
 #include <iostream>
 #include "PhoneBook.hpp"
 
+static void	header(void)
+{
+	std::cout << "Command Available -> ADD, SEARCH, EXIT" << std::endl;
+	std::cout << "$> ";
+}
+
 int	main(void)
 {
 	std::string cmd;
 	PhoneBook phonebook;
 	while (1)
 	{
-		std::cout << "Enter command: ";	
+		header();
 		if (std::cin.eof() != 0)
 			return (0);
 		std::getline(std::cin, cmd);

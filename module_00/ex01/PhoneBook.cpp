@@ -51,7 +51,7 @@ void	PhoneBook::SearchContact()
 		contactList[i].PrintInfo(i + 1);
 		i++;
 	}
-    std::cout << "Enter index: ";
+    std::cout << "\nEnter index: ";
 	std::getline(std::cin, str);
 	if (str.length() != 1 && !isdigit(str[0]))
 	{

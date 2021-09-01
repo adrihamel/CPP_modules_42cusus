@@ -13,8 +13,8 @@
 NAME		=	megaphone
 SRCS		=	megaphone.cpp
 OBJS		=	$(SRCS:.cpp=.o)
-CLANG		=	clang++ -Wall -Werror -Wextra
-RM			=	rm -rf
+CLANG		=	clang++ -Wall -Werror -Wextra -std=c++98
+RM		=	rm -rf
 
 all:	$(NAME)
 
