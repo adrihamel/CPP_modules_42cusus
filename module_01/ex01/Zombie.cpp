@@ -1,9 +1,8 @@
 #include "Zombie.hpp"
 
-Zombie::Zombie() : _name("no_name")
+Zombie::Zombie( void )
 {
-    std::cout << "Zombie " << this->_name
-    << " risen from the dead" << std::endl;
+    std::cout << "Zombie risen from the dead" << std::endl;
 }
 
 Zombie::Zombie(std::string name) : _name(name)
